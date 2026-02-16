@@ -1,107 +1,99 @@
-# The Anti-Guru Guide — Landing Page
+# Carlin Invests — The Anti-Guru Guide Landing Page
 
-Landing page for **"The Anti-Guru Guide: 7 Steps to Invest Without Blind Faith"** ebook by Carlin Peton.
+Lead capture funnel for *The Anti-Guru Guide: 7 Steps to Invest Without Blind Faith*.
 
 ## Tech Stack
 
-- HTML / CSS / JavaScript
-- Tailwind CSS (CDN)
-- Mobile-first, fully responsive
-- No build step required
+- **Framework:** Next.js 16 (App Router, TypeScript)
+- **Styling:** Tailwind CSS v4
+- **Component Library:** shadcn/ui (configured, ready to use)
+- **Fonts:** Georgia (headings), Sora (subheadings/brand), Inter (body)
+- **Deployment:** Vercel
 
-## Local Development
-
-Simply open `index.html` in a browser, or run a local server:
+## Getting Started
 
 ```bash
-# Python
-python3 -m http.server 8080
+# Install dependencies
+npm install
 
-# Node.js (if npx available)
-npx serve .
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm run start
 ```
 
-Then visit `http://localhost:8080`.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── globals.css          # Theme, brand colors, custom CSS
+│   ├── layout.tsx           # Root layout with fonts & metadata
+│   └── page.tsx             # Main page (composes all sections)
+├── components/
+│   ├── sections/
+│   │   ├── navbar.tsx       # Sticky navigation with CTA
+│   │   ├── hero.tsx         # Hero with grid pattern & ebook mockup
+│   │   ├── sneak-peek.tsx   # "What's Inside" cards
+│   │   ├── proof.tsx        # Credentials / social proof
+│   │   ├── pain-benefits.tsx # Pain points vs benefits
+│   │   ├── chapters.tsx     # 7-chapter breakdown
+│   │   ├── quick-wins.tsx   # Immediate value highlights
+│   │   ├── about.tsx        # Author bio
+│   │   ├── faqs.tsx         # FAQ accordion
+│   │   ├── final-cta.tsx    # Final email capture CTA
+│   │   └── footer.tsx       # Site footer
+│   └── ui/
+│       ├── bg-pattern.tsx   # Grid/dots/stripes background pattern
+│       ├── email-form.tsx   # Email capture form (ConvertKit placeholder)
+│       ├── fade-up.tsx      # Scroll fade-in animation wrapper
+│       └── section-divider.tsx
+└── lib/
+    └── utils.ts             # cn() utility (shadcn)
+```
+
+## Brand Colors
+
+| Name      | Hex       | Usage                    |
+|-----------|-----------|--------------------------|
+| bg        | `#0D0B14` | Page background          |
+| surface   | `#16131F` | Card/section backgrounds |
+| accent    | `#D4D4D8` | Links, subtle highlights |
+| cta       | `#22C55E` | CTA buttons              |
+| text      | `#FFFFFF` | Primary text             |
+| secondary | `#9A95A8` | Body text, labels        |
+
+## Email Integration
+
+Email forms are currently placeholders. To connect ConvertKit:
+
+1. Get your ConvertKit form ID and API key
+2. Update the `handleSubmit` function in `src/components/ui/email-form.tsx`
 
 ## Deployment
 
 ### Vercel (Recommended)
 
-1. Push this repo to GitHub
-2. Go to [vercel.com](https://vercel.com) → New Project
-3. Import the GitHub repository
-4. Framework Preset: **Other**
-5. Build Command: (leave empty)
-6. Output Directory: `.` (root)
-7. Deploy
-
-Vercel will auto-deploy on every push to `main`.
-
-### Cloudflare Pages
-
-1. Push this repo to GitHub
-2. Go to [Cloudflare Dashboard](https://dash.cloudflare.com) → Pages → Create a project
-3. Connect GitHub repository
-4. Build Command: (leave empty)
-5. Build output directory: `.` (root, or `/`)
-6. Deploy
-
-### Netlify
-
 1. Push to GitHub
-2. Go to [netlify.com](https://netlify.com) → Add new site → Import from Git
-3. Build Command: (leave empty)
-4. Publish Directory: `.`
-5. Deploy
+2. Import the repo on [vercel.com](https://vercel.com)
+3. Vercel auto-detects Next.js — deploy with defaults
 
-## Configuration
+Or use the Vercel CLI:
 
-### Email Capture (ConvertKit)
-
-The forms are currently placeholder. To connect ConvertKit:
-
-1. Create a form in ConvertKit
-2. Get your API key and Form ID
-3. In `index.html`, find the `TODO: Replace with ConvertKit` comments
-4. Uncomment and update the fetch call with your credentials
-
-### CTA / Checkout Links
-
-Currently, the CTA buttons capture email. To add a direct checkout:
-
-1. Set up your product on Gumroad or Stripe
-2. Replace the form action or button href with your checkout URL
-
-## Custom Domain
-
-After deploying to Vercel/Cloudflare:
-
-1. Add your custom domain in the platform's dashboard
-2. Update DNS records as instructed
-3. SSL is automatic on all platforms above
-
-## Structure
-
-```
-carlin-invests-funnel/
-├── index.html          # Full landing page
-├── assets/
-│   └── logo.svg        # CP logo (white)
-├── .gitignore
-└── README.md
+```bash
+npx vercel
 ```
 
-## Brand
+### Custom Domain
 
-- **Background:** #0D0B14
-- **Surface:** #16131F
-- **Accent:** #D4D4D8
-- **Text:** #F0EDF5
-- **Secondary:** #9A95A8
-- **Headings:** Georgia Bold Italic, ALL CAPS
-- **Titles:** Georgia Regular
-- **Body:** Inter Regular
+Configure your domain in Vercel project settings → Domains.
 
----
+## License
 
-*2810 · CP*
+© 2026 Carlin Invests. All rights reserved.
