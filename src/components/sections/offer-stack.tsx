@@ -29,15 +29,15 @@ export function OfferStack() {
           </h2>
         </div>
 
-        <div className="space-y-4 mb-16">
+        <div className="space-y-4 max-w-2xl mx-auto mb-16">
           {included.map((item, i) => (
             <div
               key={i}
-              className="chapter-card bg-surface rounded-xl p-6 border border-white/5"
+              className="bg-surface rounded-xl p-5 border border-accent/10"
             >
-              <div className="flex items-start gap-4">
-                <span className="text-cta text-xl mt-0.5 shrink-0">&#10003;</span>
-                <p className="font-sans text-text text-sm leading-relaxed uppercase tracking-wide">
+              <div className="flex items-start gap-3">
+                <span className="text-cta text-lg mt-0.5 shrink-0">&#10003;</span>
+                <p className="font-sans text-text text-sm leading-relaxed">
                   {item}
                 </p>
               </div>
@@ -55,15 +55,15 @@ export function OfferStack() {
           </h2>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-4 max-w-2xl mx-auto">
           {bonuses.map((item, i) => (
             <div
               key={i}
-              className="bg-surface rounded-xl p-6 border border-cta/20"
+              className="bg-surface rounded-xl p-5 border border-accent/10"
             >
-              <div className="flex items-start gap-4">
-                <span className="text-cta text-xl mt-0.5 shrink-0">&#9733;</span>
-                <p className="font-sans text-text text-sm leading-relaxed uppercase tracking-wide">
+              <div className="flex items-start gap-3">
+                <span className="text-cta text-lg mt-0.5 shrink-0">&#9733;</span>
+                <p className="font-sans text-text text-sm leading-relaxed">
                   {item}
                 </p>
               </div>
