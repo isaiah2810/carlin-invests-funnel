@@ -45,12 +45,9 @@ export function FAQs() {
 
   return (
     <FadeUp className="py-20 sm:py-28">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto px-2 sm:px-3">
         <div className="text-center mb-14">
-          <p className="text-secondary text-sm tracking-widest uppercase mb-4 font-sans">
-            Questions
-          </p>
-          <h2 className="heading-style text-2xl sm:text-3xl text-text">BEFORE YOU DECIDE</h2>
+          <h2 className="heading-style text-xl sm:text-2xl text-text">FREQUENTLY ASKED QUESTIONS</h2>
         </div>
 
         <div className="space-y-3">
@@ -70,8 +67,8 @@ export function FAQs() {
                 </span>
                 <span className="faq-icon text-secondary text-xl flex-shrink-0">+</span>
               </button>
-              <div className="faq-answer px-6 pb-5">
-                <p className="font-sans text-secondary text-sm leading-relaxed">
+              <div className={`faq-answer px-6 ${openIndex === index ? "pb-5" : ""}`}>
+                <p className="font-sans text-text text-sm leading-relaxed">
                   {faq.answer}
                 </p>
               </div>

@@ -1,3 +1,3 @@
 export function SectionDivider() {
-  return <div className="section-divider max-w-4xl mx-auto" />;
+  return <div className="section-divider max-w-7xl mx-auto" />;
 }

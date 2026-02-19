@@ -4,7 +4,7 @@ import { EmailForm } from "@/components/ui/email-form";
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex items-center pt-20 pb-16 relative overflow-hidden">
+    <section className="min-h-screen flex items-center pt-32 pb-16 relative overflow-hidden">
       {/* Grid background pattern */}
       <BGPattern
         variant="grid"
@@ -16,35 +16,24 @@ export function Hero() {
       {/* Subtle radial glow */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-surface-light/30 rounded-full blur-[120px] pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 w-full relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-          {/* Text */}
-          <div className="flex-1 text-center lg:text-left">
-            <p className="text-secondary font-sans text-sm tracking-widest uppercase mb-4">
-              Free Ebook · 7 Chapters · Zero Fluff
-            </p>
-            <h1 className="heading-style text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] leading-tight mb-6 text-text">
-              THE ANTI-GURU GUIDE
-            </h1>
-            <p className="title-style text-xl sm:text-2xl text-accent mb-6 leading-relaxed">
-              7 Steps to Invest Without Blind Faith
-            </p>
-            <p className="font-sans text-secondary text-base sm:text-lg max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
-              Stop copying other people&apos;s homework and hoping they got the answers right.
-              This is the framework a former investment banker at Jefferies uses to build real
-              conviction — and you can too.
-            </p>
+      <div className="max-w-7xl mx-auto px-2 sm:px-3 w-full relative z-10">
+        <div className="flex flex-col items-center text-center">
+          {/* 1. Header */}
+          <p className="text-secondary font-sans text-sm tracking-widest uppercase mb-4">
+            Free Ebook · 7 Chapters · Zero Fluff
+          </p>
+          <h1 className="heading-style text-lg sm:text-xl md:text-2xl lg:text-[1.75rem] leading-tight mb-6 text-text">
+            LEARN EVERYTHING YOU NEED TO KNOW BEFORE INVESTING IN 30 MINUTES
+          </h1>
 
-            {/* Email capture form */}
-            <EmailForm id="hero-form" />
-            <p className="text-secondary/50 text-xs font-sans mt-4">
-              Join 500+ readers. Unsubscribe anytime.
-            </p>
-          </div>
+          {/* 2. Sub-header */}
+          <p className="title-style text-sm sm:text-base text-accent mb-12 leading-relaxed max-w-3xl">
+            Without The Financial Jargon That Keeps You Confused and Delaying Investing
+          </p>
 
-          {/* Ebook Mockup */}
-          <div className="flex-shrink-0">
-            <div className="ebook-mockup">
+          {/* 3. Ebook Mockup */}
+          <div className="mb-10">
+            <div className="ebook-mockup mx-auto">
               <div className="ebook-cover">
                 <Image
                   src="/logo.svg"
@@ -71,6 +60,22 @@ export function Hero() {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* 4. Teaser */}
+          <p className="font-sans text-text text-base sm:text-lg max-w-4xl mb-8 leading-relaxed">
+            Last year I made a ~70% return in the financial markets - simply by applying
+            the concepts in this book. Inside, you&apos;ll learn the exact system I used to
+            go from investing only in the S&amp;P 500 to selecting companies, with confidence,
+            that I believed would outperform the S&amp;P 500.
+          </p>
+
+          {/* 5. CTA */}
+          <div className="w-full max-w-md">
+            <EmailForm id="hero-form" />
+            <p className="text-secondary/50 text-xs font-sans mt-4">
+              Unsubscribe anytime.
+            </p>
           </div>
         </div>
       </div>

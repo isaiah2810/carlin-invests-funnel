@@ -79,13 +79,13 @@ body {
   font-family: var(--font-inter), 'Inter', sans-serif;
 }
 
-/* Heading style: Georgia Bold Italic Uppercase */
+/* Heading style: Sora Bold Uppercase */
 .heading-style {
-  font-family: Georgia, serif;
-  font-weight: bold;
-  font-style: italic;
+  font-family: var(--font-sora), 'Sora', sans-serif;
+  font-weight: 700;
+  font-style: normal;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
 }
 
 /* Title/subheading style: Sora Bold */
@@ -100,7 +100,6 @@ body {
   width: 280px;
   height: 380px;
   perspective: 1000px;
-  margin-left: -30px;
 }
 
 .ebook-cover {
@@ -211,12 +210,14 @@ body {
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  opacity: 0;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out, opacity 0.2s ease-out;
 }
 
 .faq-item.open .faq-answer {
   max-height: 500px;
   padding-top: 0.75rem;
+  opacity: 1;
 }
 
 .faq-item.open .faq-icon {

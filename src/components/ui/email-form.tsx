@@ -35,7 +35,7 @@ export function EmailForm({ id }: EmailFormProps) {
     >
       <input
         type="email"
-        placeholder="Your best email"
+        placeholder="Enter email address"
         required
         value={email}
         onChange={(e) => setEmail(e.target.value)}

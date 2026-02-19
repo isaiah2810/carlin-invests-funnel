@@ -1,94 +1,73 @@
 import { FadeUp } from "@/components/ui/fade-up";
 
 const painPoints = [
-  {
-    title: "You buy what influencers recommend — then they sell",
-    description:
-      "Without the why, you have no foundation. You're just copying someone else's homework and hoping they got the answers right.",
-  },
-  {
-    title: "You panic-sell when markets dip",
-    description:
-      "Greed makes you buy at the top. Fear makes you sell at the bottom. The cycle repeats because human nature doesn't change.",
-  },
-  {
-    title: "You feel overwhelmed by financial content",
-    description:
-      "There's an overwhelming amount of content out there, and most of it is garbage. Most influencers tell you what to buy but never explain why.",
-  },
+  "You won\u2019t invest because you\u2019re afraid of losing money in the stock market",
+  "You won\u2019t invest because of lack of confidence in your knowledge in the stock market",
+  "You\u2019ll only invest in the S&P 500 and achieve average results of 10% a year",
+  "You\u2019ll invest on vibes or guru recommendations and be caught by surprise when you lose money",
 ];
 
 const benefits = [
-  {
-    title: "Build your own conviction",
-    description:
-      "Master 5 fundamental concepts and you'll understand more than 90% of retail investors. No guru required.",
-  },
-  {
-    title: "Hold through volatility with confidence",
-    description:
-      "When you understand real risk vs. perceived risk, market dips become opportunities — not threats.",
-  },
-  {
-    title: "Follow a proven, step-by-step framework",
-    description:
-      '7 clear steps from an IB professional. No fluff, no "one weird trick" — just the process that actually works.',
-  },
+  "Build a system based on what the pros use to prevent panic selling when markets dip",
+  "Understand all of the need-to-knows from all the noise that delays your profit making",
+  "Develop the ability to hold conviction in individual company investments that produce exceptional returns whilst everyone else settles for average index returns",
+  "Follow a proven system for managing risk and exposure yourself instead of placing blind faith in gurus",
 ];
 
 export function PainBenefits() {
   return (
     <FadeUp className="py-20 sm:py-28">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-14">
-          <p className="text-secondary text-sm tracking-widest uppercase mb-4 font-sans">
-            Sound Familiar?
-          </p>
-          <h2 className="heading-style text-2xl sm:text-3xl text-text">
-            THE PROBLEM WITH FOLLOWING GURUS
-          </h2>
-        </div>
+      <div className="max-w-7xl mx-auto px-2 sm:px-3">
+        {/* Pain Points */}
+        <div className="mb-20">
+          <div className="text-center mb-10">
+            <h2 className="heading-style text-xl sm:text-2xl text-text mb-4">
+              WITHOUT THIS BOOK, YOU&apos;LL LIKELY STAY STUCK WITH MEDIOCRE RETURNS WHILST
+              OTHERS WIN
+            </h2>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-14">
-          {/* Pain Points */}
-          <div className="space-y-4">
+          <div className="space-y-4 max-w-2xl mx-auto">
             {painPoints.map((point, i) => (
               <div
                 key={i}
                 className="pain-card bg-surface rounded-xl p-5 border border-white/5"
               >
                 <div className="flex items-start gap-3">
-                  <span className="text-red-400/70 text-lg mt-0.5">✕</span>
-                  <div>
-                    <h3 className="font-sans text-text font-medium text-sm mb-1">
-                      {point.title}
-                    </h3>
-                    <p className="font-sans text-secondary text-xs leading-relaxed">
-                      {point.description}
-                    </p>
-                  </div>
+                  <span className="text-red-400/70 text-lg mt-0.5 shrink-0">&#10005;</span>
+                  <p className="font-sans text-text text-sm leading-relaxed">
+                    {point}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Benefits */}
-          <div className="space-y-4">
+          <p className="font-sans text-text text-base text-center mt-8 max-w-2xl mx-auto leading-relaxed">
+            Round here we put the work in to erase these outcomes and bridge the gap between
+            professionals and everyone else.
+          </p>
+        </div>
+
+        {/* Benefits */}
+        <div>
+          <div className="text-center mb-10">
+            <h2 className="heading-style text-xl sm:text-2xl text-text mb-4">
+              FAST TRACK YOUR INVESTMENT EDUCATION TO INVEST WITH PEACE OF MIND
+            </h2>
+          </div>
+
+          <div className="space-y-4 max-w-2xl mx-auto">
             {benefits.map((benefit, i) => (
               <div
                 key={i}
                 className="bg-surface rounded-xl p-5 border border-accent/10"
               >
                 <div className="flex items-start gap-3">
-                  <span className="text-accent text-lg mt-0.5">✓</span>
-                  <div>
-                    <h3 className="font-sans text-text font-medium text-sm mb-1">
-                      {benefit.title}
-                    </h3>
-                    <p className="font-sans text-secondary text-xs leading-relaxed">
-                      {benefit.description}
-                    </p>
-                  </div>
+                  <span className="text-cta text-lg mt-0.5 shrink-0">&#10003;</span>
+                  <p className="font-sans text-text text-sm leading-relaxed">
+                    {benefit}
+                  </p>
                 </div>
               </div>
             ))}
