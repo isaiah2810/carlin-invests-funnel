@@ -33,7 +33,7 @@ export function OfferStack() {
           {included.map((item, i) => (
             <div
               key={i}
-              className="bg-surface rounded-xl p-5 border border-accent/10"
+              className="bg-surface rounded-[2rem] p-5 border border-accent/10"
             >
               <div className="flex items-start gap-3">
                 <span className="text-cta text-lg mt-0.5 shrink-0">&#10003;</span>
@@ -59,7 +59,7 @@ export function OfferStack() {
           {bonuses.map((item, i) => (
             <div
               key={i}
-              className="bg-surface rounded-xl p-5 border border-accent/10"
+              className="bg-surface rounded-[2rem] p-5 border border-accent/10"
             >
               <div className="flex items-start gap-3">
                 <span className="text-cta text-lg mt-0.5 shrink-0">&#9733;</span>

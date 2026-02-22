@@ -27,7 +27,7 @@ export function SocialProof() {
         </div>
 
         {/* Chart */}
-        <div className="bg-surface rounded-2xl p-6 sm:p-10 border border-white/5 mb-10 max-w-5xl mx-auto">
+        <div className="bg-surface rounded-[2rem] p-6 sm:p-10 border border-white/5 mb-10 max-w-5xl mx-auto">
           <p className="font-sans text-secondary text-xs tracking-widest uppercase mb-6">
             2025 Returns — S&amp;P 500 vs Selected Companies
           </p>

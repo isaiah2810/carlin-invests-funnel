@@ -65,7 +65,7 @@ export function Chapters() {
           {chapters.map((chapter) => (
             <div
               key={chapter.number}
-              className="chapter-card bg-surface rounded-xl p-6 border border-white/5"
+              className="chapter-card bg-surface rounded-[2rem] p-6 border border-white/5"
             >
               <div className="flex items-start gap-4">
                 <span className="text-accent/40 font-[var(--font-sora)] text-2xl font-bold leading-none mt-1">

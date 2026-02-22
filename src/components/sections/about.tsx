@@ -4,11 +4,11 @@ export function About() {
   return (
     <FadeUp className="py-20 sm:py-28">
       <div className="max-w-7xl mx-auto px-2 sm:px-3">
-        <div className="bg-surface rounded-2xl p-8 sm:p-12 border border-white/5">
+        <div className="bg-surface rounded-[2rem] p-8 sm:p-12 border border-white/5">
           <div className="flex flex-col md:flex-row gap-10 items-center">
             {/* Photo placeholder */}
             <div className="flex-shrink-0">
-              <div className="w-48 h-48 rounded-2xl bg-bg border border-white/5 flex items-center justify-center">
+              <div className="w-48 h-48 rounded-[2rem] bg-bg border border-white/5 flex items-center justify-center">
                 <span className="font-sans text-secondary/30 text-xs text-center px-4">
                   Photo placeholder
                 </span>

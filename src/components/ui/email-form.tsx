@@ -44,11 +44,10 @@ export function EmailForm({ id }: EmailFormProps) {
       <button
         type="submit"
         disabled={submitted}
-        className={`cta-glow bg-cta text-bg font-sans font-semibold text-sm px-6 py-3 rounded-full hover:bg-text transition-colors relative z-10 whitespace-nowrap ${
-          submitted ? "opacity-75" : ""
-        }`}
+        className={`btn-magnetic cta-glow bg-cta text-bg font-sans font-semibold text-sm px-6 py-3 rounded-full relative z-10 whitespace-nowrap ${submitted ? "opacity-75" : ""
+          }`}
       >
-        {submitted ? "✓ Check your inbox!" : "Send Me the Guide →"}
+        <span>{submitted ? "✓ Check your inbox!" : "Send Me the Guide →"}</span>
       </button>
     </form>
   );

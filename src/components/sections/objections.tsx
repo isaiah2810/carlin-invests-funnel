@@ -23,7 +23,7 @@ export function Objections() {
           {objections.map((obj, i) => (
             <div
               key={i}
-              className="bg-surface rounded-2xl p-6 sm:p-8 border border-white/5"
+              className="bg-surface rounded-[2rem] p-6 sm:p-8 border border-white/5"
             >
               <h3 className="title-style text-text text-sm sm:text-base mb-4 leading-snug">
                 {obj.question}

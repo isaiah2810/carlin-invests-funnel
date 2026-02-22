@@ -54,7 +54,7 @@ export function FAQs() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={`faq-item bg-surface rounded-xl border border-white/5 overflow-hidden ${
+              className={`faq-item bg-surface rounded-[2rem] border border-white/5 overflow-hidden ${
                 openIndex === index ? "open" : ""
               }`}
             >

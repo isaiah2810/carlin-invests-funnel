@@ -17,7 +17,7 @@ export function SneakPeek() {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          <div className="bg-surface rounded-xl p-6 border border-white/5">
+          <div className="bg-surface rounded-[2rem] p-6 border border-white/5">
             <div className="text-3xl mb-3">🧠</div>
             <h3 className="title-style text-text text-lg mb-2">Think Independently</h3>
             <p className="font-sans text-secondary text-sm leading-relaxed">
@@ -25,7 +25,7 @@ export function SneakPeek() {
               just follow the crowd.
             </p>
           </div>
-          <div className="bg-surface rounded-xl p-6 border border-white/5">
+          <div className="bg-surface rounded-[2rem] p-6 border border-white/5">
             <div className="text-3xl mb-3">📐</div>
             <h3 className="title-style text-text text-lg mb-2">Build With Structure</h3>
             <p className="font-sans text-secondary text-sm leading-relaxed">
@@ -33,7 +33,7 @@ export function SneakPeek() {
               someone else&apos;s.
             </p>
           </div>
-          <div className="bg-surface rounded-xl p-6 border border-white/5">
+          <div className="bg-surface rounded-[2rem] p-6 border border-white/5">
             <div className="text-3xl mb-3">🛡️</div>
             <h3 className="title-style text-text text-lg mb-2">Manage Real Risk</h3>
             <p className="font-sans text-secondary text-sm leading-relaxed">

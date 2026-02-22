@@ -8,7 +8,7 @@ export function Proof() {
         <div className="flex flex-col md:flex-row items-center gap-10">
           {/* Credential visual */}
           <div className="flex-shrink-0">
-            <div className="w-48 h-48 rounded-2xl bg-surface border border-white/5 flex items-center justify-center relative overflow-hidden">
+            <div className="w-48 h-48 rounded-[2rem] bg-surface border border-white/5 flex items-center justify-center relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-surface-light/50 to-transparent" />
               <div className="text-center relative z-10">
                 <Image

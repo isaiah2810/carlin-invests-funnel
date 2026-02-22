@@ -31,7 +31,7 @@ export function PainBenefits() {
             {painPoints.map((point, i) => (
               <div
                 key={i}
-                className="pain-card bg-surface rounded-xl p-5 border border-white/5"
+                className="pain-card bg-surface rounded-[2rem] p-5 border border-white/5"
               >
                 <div className="flex items-start gap-3">
                   <span className="text-red-400/70 text-lg mt-0.5 shrink-0">&#10005;</span>
@@ -61,7 +61,7 @@ export function PainBenefits() {
             {benefits.map((benefit, i) => (
               <div
                 key={i}
-                className="bg-surface rounded-xl p-5 border border-accent/10"
+                className="bg-surface rounded-[2rem] p-5 border border-accent/10"
               >
                 <div className="flex items-start gap-3">
                   <span className="text-cta text-lg mt-0.5 shrink-0">&#10003;</span>
